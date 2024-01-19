@@ -5,8 +5,10 @@ export function LED() {
   const [brillo, setBrillo] = useState(0); 
 
   const estiloBrillo = {
-    marginBottom: "10px",
     fontSize: "18px",
+    marginBottom: "10px",
+    color: "#fff", // Cambia el color del texto a blanco
+    fontWeight: "bold", // Texto en negrita
   };
 
   const estiloBoton = {

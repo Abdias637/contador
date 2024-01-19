@@ -6,6 +6,8 @@ export function Text() {
   const estiloTexto = {
     fontSize: "18px",
     marginBottom: "10px",
+    color: "#fff", // Cambia el color del texto a blanco
+    fontWeight: "bold", // Texto en negrita
   };
 
   const estiloBoton = {

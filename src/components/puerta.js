@@ -41,16 +41,31 @@ export function Puerta() {
   );
 
   return (
-    <div style={estiloContenedor}>
-      <img
-        src={estadoPuerta === "abierta" ? PuertaAbierta : PuertaCerrada}
-        alt="Estado de la puerta"
-        style={estiloImagen}
-      />
-      <div>
-        <BotonAbierta />
-        <BotonCerrada />
+    <>
+      <style>
+        {`
+          body {
+            background-image: url('https://img.freepik.com/fotos-premium/fondos-pantalla-anime-que-te-haran-querer-ver-anime_7023-20904.jpg?w=1380'); /* Cambia la URL por la imagen de fondo que desees */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+          }
+        `}
+      </style>
+      <div style={estiloContenedor}>
+        <img
+          src={estadoPuerta === "abierta" ? PuertaAbierta : PuertaCerrada}
+          alt="Estado de la puerta"
+          style={estiloImagen}
+        />
+        <div>
+          <BotonAbierta />
+          <BotonCerrada />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
